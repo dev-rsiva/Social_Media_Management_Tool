@@ -1,13 +1,223 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+nav{
+    display:flex;
+    flex-direction: row;
+    height:60px;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 15px;
+    box-shadow: 2px 2px 1px 1px rgb(233, 224, 224);
+}
+
+.company{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+}
+
+.logoName{
+    font-size:23px;
+    font-weight: bold;
+}
+
+.logoSec{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:0px 10px;
+    color:black;
+}
+
+.navitems{
+    font-weight:bold;
+    color:gray;
+    padding:0px 12px;
+    font-size: 16px;
+}
+
+.Apps :hover{
+        cursor:pointer;
+        color: blue;
+    }
+
+    
+.help :hover{
+        cursor:pointer;
+        color: blue;
+    }
+
+.trial{
+    color:blue;
+    font-size:16px;
+    margin-left:4px;
+}
+
+.logo{
+    display:inline;
+}
+
+.profile{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    width:85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMenu{
+    width:25px;
+    height:auto;
+    display:none;
+}
+
+.mobileMenuLogo{
+    font-size:25px;
+}
+
+@media only screen and (max-width:767px) {
+
+    .nav{
+        position:relative
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position:absolute;
+        top:0px;
+        right:-300px;
+        width:300px;
+        height:100vh;
+        padding:15px 25px;
+        background-color: rgb(231, 220, 172);
+    }
+
+    .showmenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position:absolute;
+        top:0px;
+        right:0px;
+        width:300px;
+        height:100vh;
+        padding:15px 25px;
+        background-color: rgb(231, 220, 172);
+    }
+
+    .navbar{
+        flex-direction: column;
+        
+        align-items: flex-start;
+    }
+
+    .navitems{
+        padding-bottom:25px;
+    }
+
+    
+
+    .trial{
+        display: flex;
+        justify-content: center;
+        margin-bottom:8px;
+    }
+
+   
+    .mobileMenu{
+        display:block;
+        z-index: 1;
+    }
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+
+     .profileEmail, .trial{
+        display:none
+    }
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1279px){
+
+     .trial{
+       display:none
+   }
+
+}
+
+
+
+/* Navbar >> App >> dropdown */
+
+
+.AppDropdown{
+    position:absolute;
+    top:45px;
+    left:0px;
+    background-color: white;
+    padding:5px 15px;
+    border: 1px solid rgb(206, 199, 199);
+    width:170px;
+    border-radius: 2px;
+
+}
+
+.HelpDropdown{
+    position:absolute;
+    top:45px;
+    left:80px;
+    background-color: white;
+    padding:5px 15px;
+    border: 1px solid rgb(206, 199, 199);
+    width:170px;
+    border-radius: 2px;
+
+}
+
+.AppDropdown li, .HelpDropdown li{
+    margin:7px 0px;
+    font-size: 14px;
+}
+
+
+
+.inside2{
+    position:relative;
 }
