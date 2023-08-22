@@ -1,0 +1,106 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+.sidebarContent{
+    display: flex;
+    flex-direction: column;
+    padding:20px 10px;
+    position:relative;
+}
+
+.selectDate{
+    text-decoration: none;
+    list-style: none;
+    display:flex;
+    width:95px;
+    line-height: 100%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(99, 99, 99);
+    font-weight: medium;
+}
+
+.weekBtns{
+    border-radius: 3px;
+    border: 1px solid gray;
+    color:gray;
+    display: flex;
+    flex-direction: row;
+    width:102px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.weekBtns :focus{
+    color:blue;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid blue;
+    border-radius: 3px;
+}
+
+.btn{
+    padding:2px;
+    margin:2px;
+    font-weight:500;
+}
+
+.postbtn{
+    color:white;
+    background-color: blue;
+    padding:5px;
+    border: none;
+    border-radius: 3px;
+    width:100px;
+    height:34px;
+    font-weight:500;
+}
+
+.postbtn :focus{
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+
+.selection{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sidebarcontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color:gray;
+}
+
+ option{
+    font-weight: 500;
+    
+}
+
+
+.postsList, .channelsList{
+    width:115px;
+    height:34px;
+    font-weight:500;
+}

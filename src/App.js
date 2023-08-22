@@ -9,10 +9,14 @@ import Navbar from './components/Navbar'
 function App() {
   return (
     <>
-      <Router>
-          <Navbar />
-          <MainRoutes />
-      </Router>
+    <React.StrictMode>
+
+        <Router>
+            <Navbar />
+            <MainRoutes />
+        </Router>
+
+    </React.StrictMode>
     </>
   )
 }

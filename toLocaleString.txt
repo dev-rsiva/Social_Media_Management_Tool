@@ -1,0 +1,25 @@
+const date = new Date();
+
+const optionsYear = { year: 'numeric' };
+console.log(date.toLocaleString('en-US', optionsYear)); // Example output: 2023
+
+const optionsMonth = { month: 'long' };
+console.log(date.toLocaleString('en-US', optionsMonth)); // Example output: July
+
+const optionsDay = { day: 'numeric' };
+console.log(date.toLocaleString('en-US', optionsDay)); // Example output: 28
+
+const optionsHour = { hour: 'numeric' };
+console.log(date.toLocaleString('en-US', optionsHour)); // Example output: 11 AM
+
+const optionsMinute = { minute: 'numeric' };
+console.log(date.toLocaleString('en-US', optionsMinute)); // Example output: 30
+
+const optionsSecond = { second: 'numeric' };
+console.log(date.toLocaleString('en-US', optionsSecond)); // Example output: 15
+
+const optionsEra = { era: 'long' };
+console.log(date.toLocaleString('en-US', optionsEra)); // Example output: AD
+
+const optionsTimeZone = { timeZoneName: 'long' };
+console.log(date.toLocaleString('en-US', optionsTimeZone)); // Example output: Pacific Standard Time

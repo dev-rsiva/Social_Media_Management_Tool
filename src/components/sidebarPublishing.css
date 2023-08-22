@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.sidebar{
+    height:100%;
+    margin-right: 5px;
+    box-shadow: 0.5px 1px 0.5px 0.5px rgb(209, 206, 206);
+    background-color: #FCFCFC;
+}

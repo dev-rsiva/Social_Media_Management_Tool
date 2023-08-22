@@ -1,5 +1,4 @@
 
-
 *{
     margin:0px;
     padding:0px;
@@ -7,6 +6,9 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* body{
+    height:100vh;
+} */
 
 nav{
     display:flex;
@@ -15,7 +17,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding:0px 15px;
-    box-shadow: 2px 2px 1px 1px rgb(233, 224, 224);
+    /* box-shadow: 0px -5px 5px -3px rgba(0, 0, 0, 0.5); */
+    border-bottom: 1px solid rgb(224, 224, 224);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 4px, rgb(245, 245, 245) 0px -1px 0px inset;
+    border: 1.5px solid rgb(233, 233, 233);
+    z-index:2;
 }
 
 .company{
@@ -48,7 +54,6 @@ nav{
         cursor:pointer;
         color: blue;
     }
-
     
 .help :hover{
         cursor:pointer;
@@ -70,6 +75,7 @@ nav{
     height:40px;
     border-radius: 50%;
     object-fit:cover;
+    position:relative;
 }
 
 li{
@@ -104,6 +110,10 @@ a{
 
 .mobileMenuLogo{
     font-size:25px;
+}
+
+.profileIcons{
+    margin-right:6px;
 }
 
 @media only screen and (max-width:767px) {
@@ -163,6 +173,38 @@ a{
         z-index: 1;
     }
 
+    .ProfileDropdown{
+       left:110px;
+        transform: translateY(110%);
+    
+    }
+
+    .profiledroplist{
+        position:absolute;
+        margin-left:60px;
+        margin-top:-60px;
+    }
+
+    .AppDropdown{
+        margin-left:75px;
+        transform: translateY(-45px);
+       
+    
+    }
+    
+    .HelpDropdown{
+        position:absolute;
+        top:45px;
+        left:80px;
+        background-color: white;
+        padding:5px 15px;
+        border: 1px solid rgb(206, 199, 199);
+        width:170px;
+        border-radius: 2px;
+    
+    }
+    
+
 }
 
 
@@ -220,4 +262,22 @@ a{
 
 .inside2{
     position:relative;
+}
+
+
+.ProfileDropdown{
+    position:absolute;
+    top:65px;
+    Right:5px;
+    background-color: white;
+    padding:5px 15px;
+    border: 1px solid rgb(206, 199, 199);
+    width:190px;
+    border-radius: 2px;
+
+}
+
+.ProfileDropdown li{
+    margin:7px 0px;
+    font-size: 14px;
 }
